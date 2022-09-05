@@ -38,3 +38,18 @@ function setTheme(mode){
 
 	localStorage.setItem('theme', mode)
 }
+
+const alert = document.querySelector('.alert')
+const form = document.querySelector('#contact-form')
+const inputFields = document.getElementsByClassName('input-field')
+
+form.addEventListener('submit', e => {
+	e.preventDefault()
+	alert.className = 'alert alert-show'
+	setTimeout(() => {
+		alert.className = 'alert'
+		for (let i=0; i<inputFields.length; i++){
+			inputFields[i].value = ''
+		}
+	}, 2000);
+})
