@@ -57,6 +57,13 @@ h4 { font-size: 24px;}
 h5 { font-size: 20px;}
 h6 { font-size: 16px;}
 
+i.fa-github{
+	color: var(--mainText);
+}
+
+i.fa-linkedin{
+	color: #0A66C2;
+}
 
 .s1{
 	background-color: var(--mainColor);
@@ -325,6 +332,11 @@ h6 { font-size: 16px;}
 	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+
+.post:hover{
+	transform: scale(1.05);
+	transition: transform 0.1s ease-in-out;
 }
 
 .thumbnail{
